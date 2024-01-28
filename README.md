@@ -36,7 +36,7 @@ Most functionality hasn't been tested yet, and I'm still trying to figure out ho
 
 - The blocks folder contains blocks that can be generated with:
 
-```cd blocks && npx @wordpress/create-block block-name --variant=dynamic --no-plugin```
+```npm run create-block my-block-name```
 
 And compiled with:
 
