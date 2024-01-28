@@ -85,13 +85,13 @@ class Plugin {
 		$this->define_public_hooks();
 
 	}
-    /**
-        * Create an instance of the loader which will be used to register the hooks
-        * with WordPress.
-     */
-    private function set_up_loader() {
-        $this->loader = new Loader();
-    }
+	/**
+	 * Create an instance of the loader which will be used to register the hooks
+	 * with WordPress.
+	 */
+	private function set_up_loader() {
+		$this->loader = new Loader();
+	}
 
 	/**
 	 * Load the required dependencies for this plugin.
@@ -101,17 +101,17 @@ class Plugin {
 	 */
 	private function load_dependencies() {
 	    new Dependencies();
-    }
+    	}
 
-    /**
-     * Register all the blocks for this plugin
-     * @return void
-     */
-    private function register_blocks() {
-        $blocks = new Blocks();
-
-        $this->loader->add_action( 'init', $blocks, 'register_blocks' );
-    }
+	/**
+	 * Register all the blocks for this plugin
+	 * @return void
+	 */
+	private function register_blocks() {
+	    $blocks = new Blocks();
+	
+	    $this->loader->add_action( 'init', $blocks, 'register_blocks' );
+	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
