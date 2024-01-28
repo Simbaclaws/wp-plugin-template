@@ -8,7 +8,7 @@ namespace CompanyName\ClientName\PluginName;
  * @link       https://company-name.com
  * @since      1.0.0
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/Deactivator
  */
 
@@ -18,7 +18,7 @@ namespace CompanyName\ClientName\PluginName;
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/Deactivator
  * @author     Author Name <author-name@company-name.com>
  */

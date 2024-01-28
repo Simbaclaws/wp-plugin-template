@@ -8,7 +8,7 @@ namespace CompanyName\ClientName\PluginName;
  * @link       https://company-name.com
  * @since      1.0.0
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/BlockCategories
  */
 
@@ -18,7 +18,7 @@ namespace CompanyName\ClientName\PluginName;
  * Maintain a list of all block categories that should exist within
  * the plugin, and register them with WordPress.
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/BlockCategories
  * @author     Author Name <author-name@company-name.com>
  */

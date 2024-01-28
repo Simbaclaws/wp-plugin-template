@@ -8,7 +8,7 @@ namespace CompanyName\ClientName\PluginName;
  * @link       https://company-name.com
  * @since      1.0.0
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/Loader
  */
 
@@ -19,7 +19,7 @@ namespace CompanyName\ClientName\PluginName;
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/Loader
  * @author     Author Name <author-name@company-name.com>
  */

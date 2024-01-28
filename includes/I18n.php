@@ -11,7 +11,7 @@ namespace CompanyName\ClientName\PluginName;
  * @link       https://inner-join.nl
  * @since      1.0.0
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/I18n
  */
 
@@ -22,7 +22,7 @@ namespace CompanyName\ClientName\PluginName;
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/I18n
  * @author     Author Name <author-name@company-name.com>
  */

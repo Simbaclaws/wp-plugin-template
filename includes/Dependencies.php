@@ -11,7 +11,7 @@ namespace CompanyName\ClientName\PluginName;
  * @link       https://company-name.com
  * @since      1.0.0
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/Dependencies
  */
 
@@ -22,7 +22,7 @@ namespace CompanyName\ClientName\PluginName;
  * Uses the tgmpa composer package.
  *
  * @since      1.0.0
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/Dependencies
  * @author     Author Name <author-name@company-name.com>
  */

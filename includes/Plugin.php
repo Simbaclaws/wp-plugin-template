@@ -11,7 +11,7 @@ namespace CompanyName\ClientName\PluginName;
  * @link       https://company-name.com
  * @since      1.0.0
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/Plugin
  */
 
@@ -26,7 +26,7 @@ namespace CompanyName\ClientName\PluginName;
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/Plugin
  * @author     Author Name <author-name@company-name.com>
  */
@@ -77,10 +77,10 @@ class Plugin {
 		}
 		$this->plugin_name = 'content';
 
-        	$this->set_up_loader();
+        $this->set_up_loader();
 		$this->load_dependencies();
-        	$this->register_block_categories();
-        	$this->register_blocks();
+        $this->register_block_categories();
+        $this->register_blocks();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
@@ -102,7 +102,7 @@ class Plugin {
 	 */
 	private function load_dependencies() {
 	    new Dependencies();
-        }
+    }
 
 	/**
 	 * Register all the block categories for this plugin
@@ -134,11 +134,9 @@ class Plugin {
 	 * @access   private
 	 */
 	private function set_locale() {
-
 		$plugin_i18n = new I18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
-
 	}
 
 	/**
@@ -149,12 +147,10 @@ class Plugin {
 	 * @access   private
 	 */
 	private function define_admin_hooks() {
-
 		$plugin_admin = new AdminScripts( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-
 	}
 
 	/**
@@ -165,12 +161,10 @@ class Plugin {
 	 * @access   private
 	 */
 	private function define_public_hooks() {
-
 		$plugin_public = new PublicScripts( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-
 	}
 
 	/**

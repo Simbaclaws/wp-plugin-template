@@ -8,7 +8,7 @@ namespace CompanyName\ClientName\PluginName;
  * @link       https://inner-join.nl
  * @since      1.0.0
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/PublicScripts
  */
 
@@ -18,7 +18,7 @@ namespace CompanyName\ClientName\PluginName;
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    PluginName
+ * @package    CompanyName/ClientName
  * @subpackage PluginName/PublicScripts
  * @author     Author Name <author-name@company-name.com>
  */
