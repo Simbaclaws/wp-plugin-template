@@ -1,0 +1,27 @@
+{
+  "name": "client-name/plugin-name",
+  "description": "A plugin-name plugin for client-name",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "autoload": {
+    "psr-4": {
+      "CompanyName\\ClientName\\PluginName\\": "includes/"
+    }
+  },
+  "require": {
+    "composer/installers": "^2.2",
+    "tgmpa/tgm-plugin-activation": "^2.6.1"
+  },
+  "authors": [
+    {
+      "name": "Author Name",
+      "email": "author-name@company-name.com"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
+}
