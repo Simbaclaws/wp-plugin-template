@@ -77,9 +77,9 @@ class Plugin {
 		}
 		$this->plugin_name = 'content';
 
-        $this->set_up_loader();
+        	$this->set_up_loader();
 		$this->load_dependencies();
-        $this->register_blocks();
+        	$this->register_blocks();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
