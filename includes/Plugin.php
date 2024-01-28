@@ -77,13 +77,13 @@ class Plugin {
 		}
 		$this->plugin_name = 'content';
 
-        	$this->set_up_loader();
+        $this->set_up_loader();
 		$this->load_dependencies();
-        	$this->register_blocks();
+        $this->register_block_categories();
+        $this->register_blocks();
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
-
 	}
 	/**
 	 * Create an instance of the loader which will be used to register the hooks
@@ -101,7 +101,17 @@ class Plugin {
 	 */
 	private function load_dependencies() {
 	    new Dependencies();
-    	}
+    }
+
+    /**
+     * Register all the block categories for this plugin
+     * @return void
+     */
+    private function register_block_categories() {
+        $blockCategories = new BlockCategories();
+
+        $this->loader->add_filter( 'block_categories_all', $blockCategories, 'create_categories' );
+    }
 
 	/**
 	 * Register all the blocks for this plugin
