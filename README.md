@@ -19,7 +19,7 @@ Most functionality hasn't been tested yet, and I'm still trying to figure out ho
 
 - Run npm install and composer install inside the wp-plugin-template folder.
 
-- Run npm start
+- Run npm start in the same folder.
 
 
 ## Folder Structure
@@ -35,8 +35,11 @@ Most functionality hasn't been tested yet, and I'm still trying to figure out ho
 - The languages folder is the folder for the plugin's translations obviously.
 
 - The blocks folder contains blocks that can be generated with:
+
 ```cd blocks && npx @wordpress/create-block block-name --variant=dynamic --no-plugin```
+
 And compiled with:
+
 ```npm run start```
 
 
